@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-forms</title>
+    <script src="https://kit.fontawesome.com/89144dc9c5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="back"></div>
+    <div class="back2"></div>
+    
+    <div class="wrapper">
+        <header>
+            <img src="images/logo.svg" alt="">
+        </header>
+
+        <div class="container">
+            <h1>Welcome to Mailchimp</h1>
+            <p>Find your people. Engage your customers. Build your brand. Do it all with Mailchimp’s Marketing Platform. Already have an account? <a href="#">Log in</a></p>
+
+            <form action="#">
+                <p>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </p>
+                <p>
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username">
+                </p>
+                <p>
+                    <label for="pass">
+                        Password
+                        <a href="#">
+                            <i class="far fa-eye"></i> 
+                            &nbsp; Show
+                        </a>
+                    </label>
+                    <input type="password" id="pass" name="pass">
+                </p>
+                <ul>
+                    <li>One lowercase character</li>
+                    <li>One special character</li>
+                    <li>One uppercase character</li>
+                    <li>8 characters minimum</li>
+                    <li>One number</li>
+                </ul>
+                <div class="form-bottom">
+                    <p>
+                        <input type="checkbox" id="receive">
+                        <label for="receive">I don't want to receive emails about new Mailchimp products, best practices, or special offers.</label>
+                    </p>
+                    <p><button type="submit">Sign Up</button></p>
+                </div>
+            </form>
+            <p>By clicking the "Sign Up" button, you are creating a Mailchimp account, and you agree to Mailchimp's <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+        </div>
+
+        <footer>&copy; 2001–2020 All Rights Reserved. Mailchimp &reg; is a registered trademark of The Rocket Science Group. <a href="#">Cookie Preferences</a>, <a href="#">Privacy</a>, and <a href="#">Terms</a>.</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,214 @@
+@font-face {
+    font-family: "Graphik Web";
+    src: url("Graphik-Regular-Web.woff2") format("woff2");
+}
+@font-face {
+    font-family: "Means Web";
+    src: url("Means-Light-Web.woff2") format("woff2");
+}
+
+/*-----------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style-type: none;
+}
+body {
+  font: 14px/22px "Graphik Web", sans-serif;
+}
+
+/*-------------------------------------------------------*/
+
+.wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 10px;
+}
+.back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 8px;
+    background-color: #FFE01B;
+}
+.back2 {
+    display: none;
+}
+.container { 
+    padding: 0 15px;
+    margin-bottom: 60px;
+}
+
+/*------------------------------------------------*/
+
+header img {
+    width: 40px;
+    margin: 10px 0 0 10px; 
+}
+
+footer {
+    color: #241c15a6;
+    font: 12px/18px "Graphik Web", sans-serif;
+    padding: 0 15px 15px; 
+}
+footer a {
+    text-decoration: underline;
+}
+
+/*-----------------------------------------------------------*/
+
+h1 {
+    font: 44px/48px "Means Web", serif;
+    color: #241c15;
+    text-align: center;
+    margin: 15px;
+}
+.container>p:first-of-type {
+    font-size: 16px;
+    line-height: 26px;
+}
+.container>p a {
+    color: #007C89;
+}
+.container>p:last-of-type a {
+    text-decoration: underline;
+}
+
+
+/*-----------------------------------------------------------*/
+
+form {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+label:not([for="receive"]) {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #BDBAB8;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+}
+form p {
+    margin-bottom: 20px;
+}
+label[for="pass"] {
+    display: flex;
+    justify-content: space-between;
+}
+label[for="pass"] a {
+    color: #007C89;
+}
+form ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 5px;
+}
+form li {
+    position: relative;
+    margin-left: 15px;
+}
+form li::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #007C89;
+    position: absolute;
+    top: 7px;
+    left: -15px;
+}
+.form-bottom {
+    margin-bottom: 40px;
+}
+.form-bottom p:first-of-type {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+}
+input[type="checkbox"] {
+    width: 50%;
+}
+
+/*----------------------------------------------------------*/
+
+.form-bottom button {
+    width: 100%;
+    box-sizing: border-box;
+    color: #BDBBB9;
+    border: 1px solid #DEDDDC;
+    font: 16px "Graphik Web", sans-serif;
+    background-color: #fff;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+/*----------------------------------------------------------*/
+
+@media screen and (min-width: 650px) {
+    .back {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: auto;
+        width: 8px;
+        height: auto;
+    }
+    .wrapper {
+        padding-top: 0;
+        padding-left: 10px;
+    }
+    .container {
+        width: 600px;
+        margin: 0 auto 60px;
+        padding: 0;
+    }
+}
+@media screen and (min-width: 1050px) {
+    .back2 {
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 25%;
+        background-color: #FFE01B;
+        z-index: -1;
+    }
+    .wrapper {
+        padding-right: 25%;
+        background-image: url("../images/flowers.png");
+        background-repeat: no-repeat;
+        background-position: 70vw 100%;
+        background-size: auto 100vh;
+        z-index: 1;
+    }
+    .form-bottom {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-column-gap: 30px;
+        align-items: center;
+    }
+    .form-bottom p:first-of-type {
+        order: 10;
+    }
+}
