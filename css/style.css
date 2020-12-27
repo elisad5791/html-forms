@@ -201,7 +201,12 @@ input[type="checkbox"] {
         background-position: 70vw 100%;
         background-size: auto 100vh;
         z-index: 1;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: space-between;
     }
+    
     .form-bottom {
         display: grid;
         grid-template-columns: 1fr 3fr;
